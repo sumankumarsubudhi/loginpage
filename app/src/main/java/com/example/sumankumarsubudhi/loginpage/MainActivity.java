@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Password = (EditText) findViewById(R.id.password);
 
         if ((Username.getText().toString().trim().equals("")) || Password.getText().toString().trim().equals("")) {
-            Toast.makeText(getApplicationContext(), "Username/Password is empty", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Username/Password is empty", Toast.LENGTH_SHORT).show();
         } else {
 
             Intent intent = new Intent(MainActivity.this, Main2Activity.class);
